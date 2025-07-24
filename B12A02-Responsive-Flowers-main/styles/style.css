@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *header section styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 100px;
+  align-items: center;
+  
+}
+.head-menu {
+display: flex;
+gap: 48px;
+
+}
+.head-menu a {
+  list-style: none;
+text-decoration: none;
+color: black;
+font-family: "Inter", sans-serif;
+}
+.about .shop {
+  color: rgb(137, 135, 161);
+  font-weight: 400;
+}
