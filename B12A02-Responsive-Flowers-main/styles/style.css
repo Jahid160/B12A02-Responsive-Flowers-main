@@ -115,6 +115,127 @@ padding-top: 10px;
   color: white;
 }
 
+/* *our information */
+.information {
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 210px 200px;
+
+}
+.information-info li {
+  padding: 20px;
+  list-style: disc;
+}
+.information-info h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Noto Serif";
+}
+
+/* *latest section styles */
+.latest-section {
+  display: flex;
+margin: 10px 200px;
+justify-content: space-between;
+  gap: 25px;
+  
+}
+.latest-section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 40%;
+}
+.latest-section-left-top, .latest-section-left-bottom {
+
+  border-radius: 15px;
+  width: 367px;
+  height: 197px;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+.latest-section-left-top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../assets/deal-bloom.png);
+}
+.latest-section-left-bottom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../assets/deal-ana.png);
+}
+.latest-section-right {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/deal-zabo.png);
+  
+  border-radius: 15px;
+  width: 60%;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+.latest-section-left h4, .latest-section-right h2 {
+  font-size: 1.5rem;
+}
+.latest-section-left button, .latest-section-right button {
+  text-decoration: underline;
+}
+
+/* *subscribe section styles */
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 200px;
+  width: auto;
+  height: 533px;
+}
+.subscribe-head h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+.email-box {
+  display: flex;
+  justify-content: center;
+}
+.email-box input {
+  background-color: white;
+  width: 830px;
+  height: 50px;
+  padding-left: 20px;
+}
+.email-box button {
+  background-color: #E95A08;
+  padding: 10px 30px;
+}
+
+/* *footer section styles */
+.footer {
+  margin: 0 200px;
+}
+.footer-section {
+  display: grid;
+  grid-template-columns: 33% 18% 18% 25%;
+  justify-content: center;
+}
+.footer-4rd {
+  display: flex;
+  gap: 24px;
+}
+.footer-4rd img {
+  width: 36px;
+  height: 36px;
+}
+.footer-3rd, .footer-second {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #6B7280;
+}
+.footer-first {
+  margin-left: -50px;
+}
 /* *mobile responsive */
 @media screen and (max-width: 600px) {
   .header {
@@ -170,4 +291,52 @@ margin: 0;
   flex: 1;
 }
 
+
+/** <!-- *our information --> */
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 41px 0 0 0 ;
+
+}
+.information-info li{
+  padding: 8px;
+  list-style: disc;
+}
+.hide {
+  display: none;
+}
+
+/* *latest section responsive styles */
+.latest-section {
+  flex-direction: column;
+  margin: 0;
+}
+.latest-section-right {
+  width: 365px;
+  height: 184px;
+  margin-left: 30px
+}
+.latest-section-left-top, .latest-section-left-bottom {
+  width: 365px;
+  height: 184px;
+  align-content: center;
+  margin-left: 30px;
+}
+
+/* *subscribe section styles */
+.email-box input {
+  width: 218px;
+  height: 50px;
+}
+.subscribe-section {
+  margin: 10px;
+  width: 393px;
+  height: 275px;
+  background-size: cover;
+}
+.subscribe-head h1{
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
 }
