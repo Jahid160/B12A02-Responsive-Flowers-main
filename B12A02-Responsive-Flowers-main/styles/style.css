@@ -218,6 +218,8 @@ justify-content: space-between;
   display: grid;
   grid-template-columns: 33% 18% 18% 25%;
   justify-content: center;
+  height: 348px;
+  align-items: center;
 }
 .footer-4rd {
   display: flex;
@@ -338,5 +340,31 @@ margin: 0;
 .subscribe-head h1{
   font-size: 1.5rem;
   padding-bottom: 20px;
+}
+
+/* *footer section styles */
+.footer {
+  height: 865px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: -130px;
+  gap: 20px;
+}
+.footer-first-head > br{
+display: none;
+}
+.footer-second {
+  margin-left: -235px;
+  gap: 32px;
+}
+.footer-3rd {
+  margin-left: -190px;
+  gap: 32px;
+}
+.footer-4rd {
+  margin-left: -100px;
 }
 }
